@@ -10,24 +10,25 @@ package FirstHomework;
 public class FirstTask {
 
     public static void main(String[] args) {
-        System.out.println(quarterOfHour(70));
+        System.out.println(quarterOfHour(40));
 
     }
 
     public static int quarterOfHour(int minutes) {
-        int quarter = -1;
+
         if (0 <= minutes && minutes <= 15) {
-            quarter = 1;
+            return 1;
         }
         if (16 <= minutes && minutes <= 30) {
-            quarter = 2;
+            return 2;
         }
         if (31 <= minutes && minutes <= 45) {
-            quarter = 3;
+            return 3;
         }
         if (46 <= minutes && minutes <= 59) {
-            quarter = 4;
+            return 4;
+        } else {
+            return -1;
         }
-        return quarter;
     }
 }

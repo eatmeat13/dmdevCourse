@@ -16,31 +16,28 @@ public class SecondTask {
 
     public static void main(String[] args) {
 
-        System.out.println(calculator(1123.4,0,'/'));
+        System.out.println(calculator(1123.4, 0, '/'));
 
     }
 
     public static double calculator(double operand1, double operand2, char operation) {
-        double result = 0;
 
         if (operation == '+') {
-            result = operand1 + operand2;
+            return operand1 + operand2;
         }
         if (operation == '-') {
-            result = operand1 - operand2;
+            return operand1 - operand2;
         }
         if (operation == '*') {
-            result = operand1 * operand2;
+            return operand1 * operand2;
         }
         if (operation == '/') {
-            result = operand1 / operand2;
+            return operand1 / operand2;
         }
         if (operation == '%') {
-            result = operand1 % operand2;
+            return operand1 % operand2;
+        } else {
+            return 0;
         }
-
-        return result;
     }
-
-
 }
