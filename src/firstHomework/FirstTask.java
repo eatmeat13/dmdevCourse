@@ -1,4 +1,4 @@
-package FirstHomework;
+package firstHomework;
 
 /**
  * В переменной minutes лежит число от 0 до 59.
@@ -15,7 +15,6 @@ public class FirstTask {
     }
 
     public static int quarterOfHour(int minutes) {
-
         if (0 <= minutes && minutes <= 15) {
             return 1;
         }

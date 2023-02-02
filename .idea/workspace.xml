@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e1259cb-0e96-475e-a5dc-d58096124f1a" name="Changes" comment="first Homework">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FirstHomework/FirstTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FirstHomework/FirstTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FirstHomework/SecondTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FirstHomework/SecondTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FirstHomework/FirstTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firstHomework/FirstTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FirstHomework/SecondTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firstHomework/SecondTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FirstHomework/ThirdTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firstHomework/ThirdTask.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,26 +37,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.FirstTask">
     <configuration name="FirstTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FirstHomework.FirstTask" />
+      <option name="MAIN_CLASS_NAME" value="firstHomework.FirstTask" />
       <module name="dmdevCourse" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="FirstHomework.*" />
+          <option name="PATTERN" value="firstHomework.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -63,11 +65,11 @@
       </method>
     </configuration>
     <configuration name="SecondTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FirstHomework.SecondTask" />
+      <option name="MAIN_CLASS_NAME" value="firstHomework.SecondTask" />
       <module name="dmdevCourse" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="FirstHomework.*" />
+          <option name="PATTERN" value="firstHomework.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,11 +78,11 @@
       </method>
     </configuration>
     <configuration name="ThirdTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FirstHomework.ThirdTask" />
+      <option name="MAIN_CLASS_NAME" value="firstHomework.ThirdTask" />
       <module name="dmdevCourse" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="FirstHomework.*" />
+          <option name="PATTERN" value="firstHomework.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,6 +107,8 @@
       <option name="presentableId" value="Default" />
       <updated>1675113969050</updated>
       <workItem from="1675113970109" duration="4577000" />
+      <workItem from="1675261445883" duration="1155000" />
+      <workItem from="1675319045359" duration="917000" />
     </task>
     <task id="LOCAL-00001" summary="first Commit">
       <created>1675114047550</created>

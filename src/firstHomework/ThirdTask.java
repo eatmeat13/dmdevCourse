@@ -1,4 +1,4 @@
-package FirstHomework;
+package firstHomework;
 
 /**
  * Даны два прямоугольных треугольника.
