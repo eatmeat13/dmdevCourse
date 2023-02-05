@@ -1,4 +1,4 @@
-package firstHomework;
+package firsthomework;
 
 /**
  * В переменной minutes лежит число от 0 до 59.
@@ -6,25 +6,22 @@ package firstHomework;
  * в какую четверть часа попадает это число (в первую, вторую, третью или четвертую).
  * Протестировать функцию в main.
  */
-
 public class FirstTask {
-
     public static void main(String[] args) {
-        System.out.println(quarterOfHour(40));
-
+        System.out.println(searchQuarterOfHour(40));
     }
 
-    public static int quarterOfHour(int minutes) {
-        if (0 <= minutes && minutes <= 15) {
+    public static int searchQuarterOfHour(int minutes) {
+        if (minutes >= 0 && minutes <= 15) {
             return 1;
         }
-        if (16 <= minutes && minutes <= 30) {
+        if (minutes >= 16 && minutes <= 30) {
             return 2;
         }
-        if (31 <= minutes && minutes <= 45) {
+        if (minutes >= 31 && minutes <= 45) {
             return 3;
         }
-        if (46 <= minutes && minutes <= 59) {
+        if (minutes >= 46 && minutes <= 59) {
             return 4;
         } else {
             return -1;

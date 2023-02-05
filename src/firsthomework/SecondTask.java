@@ -1,4 +1,4 @@
-package firstHomework;
+package firsthomework;
 
 /**
  * Даны 3 переменные:
@@ -15,26 +15,19 @@ package firstHomework;
 public class SecondTask {
 
     public static void main(String[] args) {
-
-        System.out.println(calculator(1123.4, 0, '/'));
-
+        System.out.println(calculate(1123.4, 0, '/'));
     }
 
-    public static double calculator(double operand1, double operand2, char operation) {
-
+    public static double calculate(double operand1, double operand2, char operation) {
         if (operation == '+') {
             return operand1 + operand2;
-        }
-        if (operation == '-') {
+        } else if (operation == '-') {
             return operand1 - operand2;
-        }
-        if (operation == '*') {
+        } else if (operation == '*') {
             return operand1 * operand2;
-        }
-        if (operation == '/') {
+        } else if (operation == '/') {
             return operand1 / operand2;
-        }
-        if (operation == '%') {
+        } else if (operation == '%') {
             return operand1 % operand2;
         } else {
             return 0;

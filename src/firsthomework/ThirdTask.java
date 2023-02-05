@@ -1,10 +1,10 @@
-package firstHomework;
+package firsthomework;
 
 /**
  * Даны два прямоугольных треугольника.
  * Каждый из них задается двумя целочисленными переменными a и b - стороны треугольника.
  * Написать код, в котором вычисляется площадь каждого треугольника и затем эти площади сравниваются друг с другом.
-
+ * <p>
  * Для этого понадобится написать 2 функции.
  * Первая: по двум сторонам прямоугольного треугольника возвращает его площадь.
  * Вторая: сравнивает переданные площади двух треугольников и выводит на консоль первый треугольник больше, меньше или равен второму.
@@ -18,25 +18,24 @@ public class ThirdTask {
         int b1 = 30;
         int a2 = 30;
         int b2 = 30;
-        double s1 = triangleSquare(a1,b1);
-        double s2 = triangleSquare(a2,b2);
+        double s1 = calculateTriangleArea(a1, b1);
+        double s2 = calculateTriangleArea(a2, b2);
         System.out.println(s1);
         System.out.println(s2);
         System.out.println("------------------");
-        triangleComparing(s1,s2);
+        compareArea(s1, s2);
 
     }
 
-    public static double triangleSquare(int firstSight, int secondSight){
+    public static double calculateTriangleArea(int firstSight, int secondSight) {
         return (double) firstSight * secondSight / 2;
     }
 
-    public static void triangleComparing(double firstSquare, double secondSquare){
-        if (firstSquare ==secondSquare){
+    public static void compareArea(double firstSquare, double secondSquare) {
+        if (firstSquare == secondSquare) {
             System.out.println("Треугольники равны");
-        } else if (firstSquare > secondSquare){
+        } else if (firstSquare > secondSquare) {
             System.out.println("Первый треугольник больше");
         } else System.out.println("Первый треугольник меньше");
-
     }
 }
