@@ -23,7 +23,7 @@ public class ThirdTask {
         System.out.println(s1);
         System.out.println(s2);
         System.out.println("------------------");
-        compareArea(s1, s2);
+        compareTriangleArea(s1, s2);
 
     }
 
@@ -31,7 +31,7 @@ public class ThirdTask {
         return (double) firstSight * secondSight / 2;
     }
 
-    public static void compareArea(double firstSquare, double secondSquare) {
+    public static void compareTriangleArea(double firstSquare, double secondSquare) {
         if (firstSquare == secondSquare) {
             System.out.println("Треугольники равны");
         } else if (firstSquare > secondSquare) {
