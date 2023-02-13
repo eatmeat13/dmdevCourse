@@ -16,9 +16,32 @@ public class SecondTask {
     }
 
     public static int[] convertArrayCharToArrayInt(char[] chars) {
-        int[] result = new int[chars.length];
-        for (int i = 0; i < result.length; i++) {
-            result[i] = chars[i];
+        int sum = 0;
+        double avg;
+        int[] current = new int[chars.length];
+        for (int i = 0; i < current.length; i++) {
+            current[i] = chars[i];
+            sum += current[i];
+        }
+        avg = (double) sum/ current.length;
+        return makeMassiveWithLengthOfIntsBiggerThanAvg(current, avg);
+    }
+
+    public static int[] makeMassiveWithLengthOfIntsBiggerThanAvg(int[] ints, double avg){
+        int count = 0;
+        int current = 0;
+        for (int i = 0; i < ints.length; i++) {
+            if (ints[i] > avg) {
+                count++;
+            }
+        }
+            int[] result = new int[count];
+            for (int  i = 0; i < ints.length; i++) {
+
+                if (ints[i] > avg) {
+                    result[current] = ints[i];
+                    current++;
+            }
         }
         return result;
     }
