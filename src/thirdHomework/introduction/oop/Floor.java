@@ -3,16 +3,18 @@ package thirdHomework.introduction.oop;
 public class Floor {
 
     private final int floorNumber;
-    private final int[] flats;
+    private final Flat[] flats;
 
-    public Floor(int floorNumber, int[] flats) {
+    public Floor(int floorNumber, Flat[] flats) {
         this.floorNumber = floorNumber;
         this.flats = flats;
     }
 
-    public void ptint() {
-        System.out.println("Floor number: " + floorNumber + " number of flats: " + flats.length);
+    public void print() {
+        System.out.println("Floor number: " + floorNumber);
+        for (Flat flat : flats) {
+            flat.print();
+        }
     }
-
 }
 
