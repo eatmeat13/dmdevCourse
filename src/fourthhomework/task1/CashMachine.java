@@ -1,4 +1,4 @@
-package fourthhomework;
+package fourthhomework.task1;
 
 /**
  * Создать класс, описывающий банкомат.

@@ -1,4 +1,6 @@
-package fourthhomework;
+package fourthhomework.task1;
+
+import fourthhomework.task1.CashMachine;
 
 public class CashMachineRunner {
     public static void main(String[] args) {
