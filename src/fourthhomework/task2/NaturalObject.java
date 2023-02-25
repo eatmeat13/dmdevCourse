@@ -1,6 +1,6 @@
 package fourthhomework.task2;
 
-public abstract class NaturalObject implements SpaceObject{
+public abstract class NaturalObject implements SpaceObject {
 
     private int mass;
     private int volume;
@@ -32,15 +32,14 @@ public abstract class NaturalObject implements SpaceObject{
     public String getName() {
         return name;
     }
+
     @Override
     public String toString() {
         return "Natural object " + name +
                 " mass = " + mass +
-                ", volume = " + volume ;
+                ", volume = " + volume;
     }
 
-
-    // метод для расчета диаметра
     public double calculateDiameter() {
         double radius = Math.cbrt(3 * volume / (4 * Math.PI));
         return 2 * radius;

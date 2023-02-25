@@ -32,6 +32,7 @@ public abstract class ArtificialObject implements SpaceObject {
     public String getName() {
         return name;
     }
+
     @Override
     public String toString() {
         return "Artificial object " + name +
@@ -40,6 +41,7 @@ public abstract class ArtificialObject implements SpaceObject {
                 " created in " + yearOfCreate +
                 " by " + creator;
     }
+
     @Override
     public int calculateDistance(SpaceObject spaceObject) {
         return 2;

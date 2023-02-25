@@ -23,6 +23,6 @@ public class Planet extends NaturalObject {
     public String toString() {
         return super.toString() +
                 ", It's Planet! { hasRing = " + hasRing +
-                ", hasLife = " + hasLife + " }" ;
+                ", hasLife = " + hasLife + " }";
     }
 }
