@@ -39,22 +39,20 @@ public class ChatRunner {
         System.out.println("------");
         System.out.println(chats);
         System.out.println("------");
-        chats.sort( new ComparatorChatsCountMembers().thenComparing(new ComparatorChatsName()));
+        chats.sort(new ComparatorChatsCountMembers().thenComparing(new ComparatorChatsName()));
         System.out.println(chats);
     }
 
     public static List<Chat> removeChatsWithCountMembersLessThousand(List<Chat> chats) {
         List<Chat> removeChats = chats;
         Iterator<Chat> iterator = removeChats.iterator();
-        while(iterator.hasNext()){
+        while (iterator.hasNext()) {
             Chat next = iterator.next();
-            if  (next.getCountOfMembers() < 1000 ){
+            if (next.getCountOfMembers() < 1000) {
                 iterator.remove();
 
             }
         }
         return removeChats;
     }
-
-
 }
