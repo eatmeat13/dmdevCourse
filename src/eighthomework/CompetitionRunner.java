@@ -22,8 +22,8 @@ public class CompetitionRunner {
 
         Day day = new Day(airMagician, fireMagician);
         GrowCrystals growCrystals = new GrowCrystals(day, getInitialCrystals());
-        Rocket airRocket = new Rocket(airMagician, fireMagician, growCrystals.getDump(), day);
-        Rocket fireRocket = new Rocket(fireMagician, airMagician, growCrystals.getDump(), day);
+        Rocket airRocket = new Rocket(airMagician, fireMagician, growCrystals.getPlanet(), day);
+        Rocket fireRocket = new Rocket(fireMagician, airMagician, growCrystals.getPlanet(), day);
 
         ThreadUtil.startThreads(day, growCrystals, airRocket, fireRocket);
         ThreadUtil.joinThreads(day, growCrystals, airRocket, fireRocket);

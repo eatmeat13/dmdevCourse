@@ -29,15 +29,15 @@ public class GrowCrystals extends Thread {
             while (day.getFirstMagician().isCrystalsEnabled() && day.getSecondMagician().isCrystalsEnabled()
             ) {
 
-                throwNewRobotDetails();
-                waitNextNight();
+                growthNewCrystals();
+                waitNextDay();
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
 
-    private void throwNewRobotDetails() {
+    private void growthNewCrystals() {
         int countDetailsForThrowingToDump = RandomUtil.getNextStartWithTwo(MAX_DETAILS_COUNT);
         synchronized (planet.getLock()) {
             for (int j = 0; j < countDetailsForThrowingToDump; j++) {
@@ -48,13 +48,13 @@ public class GrowCrystals extends Thread {
         }
     }
 
-    private void waitNextNight() throws InterruptedException {
+    private void waitNextDay() throws InterruptedException {
         synchronized (day.getLock()) {
             day.getLock().wait();
         }
     }
 
-    public Planet getDump() {
+    public Planet getPlanet() {
         return planet;
     }
 }
